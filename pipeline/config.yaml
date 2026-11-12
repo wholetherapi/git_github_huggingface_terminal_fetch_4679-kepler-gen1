@@ -1,0 +1,12 @@
+# Kepler-Instruct pipeline configuration
+release:
+  reasoning_split: data/kepler_instruct_l25.jsonl
+  raw_split: data/kepler_instruct_raw.jsonl
+
+inference:
+  default_generator: lumen-2.5-pro
+  optional_backends:
+    - quasar-8b-chat
+    - nimbus-4o-mini
+  max_response_tokens: 2048
+  temperature: 0.2
